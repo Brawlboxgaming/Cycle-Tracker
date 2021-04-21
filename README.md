@@ -1,6 +1,14 @@
 # Cycle Tracker
 
  Used to track powerups in Call of Duty Zombies.
+ 
+ Currently, the only available games that are supported are:
+ 	
+	World at War
+	Black Ops
+	Black Ops II
+	Black Ops III
+	Black Ops Cold War
 
 # Hotkeys
 
