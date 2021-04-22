@@ -6,8 +6,9 @@
  	
 	World at War
 	Black Ops
-	Black Ops II
-	Black Ops III
+	Black Ops 2
+	Black Ops 3
+	Black Ops 4
 	Black Ops Cold War
 
 # Hotkeys
