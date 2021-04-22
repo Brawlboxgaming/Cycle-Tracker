@@ -25,10 +25,12 @@ namespace Cycle_Tracker
             tabControl.TabPages.Remove(bo1Tab);
             tabControl.TabPages.Remove(bo2Tab);
             tabControl.TabPages.Remove(bo3Tab);
+            tabControl.TabPages.Remove(bo4Tab);
+            tabControl.TabPages.Remove(bocwTab);
             keyboard = new GlobalKeyboardListener();
             keyboard.HookAllKeys = true;
             keyboard.KeyDown += PressKey;
-            drops = new[] { dropMax, dropInsta, dropDouble, dropNuke, dropFire, dropDeath, dropBlood, dropBonus, dropCarpenter };
+            drops = new[] { dropMax, dropInsta, dropDouble, dropNuke, dropFire, dropDeath, dropBlood, dropBonus, dropFull, dropCarpenter };
             dropsList = new[] { dropList1, dropList2, dropList3, dropList4, dropList5, dropList6, dropList7, dropList8, dropList9, dropList10, dropList11, dropList12 };
         }
 
@@ -38,7 +40,14 @@ namespace Cycle_Tracker
                 startButton_Click(sender, e);
             else if (e.VirtualKeyCode >= Keys.NumPad1 && e.VirtualKeyCode <= Keys.NumPad9)
             {
-                inputDrop = ProcessDigits(e.VirtualKeyCode - Keys.NumPad0);
+                if (ModifierKeys.HasFlag(Keys.Alt))
+                {
+                    inputDrop = ProcessDigits(e.VirtualKeyCode - Keys.NumPad0 + 9);
+                }
+                else
+                {
+                    inputDrop = ProcessDigits(e.VirtualKeyCode - Keys.NumPad0);
+                }
                 CalculateDropsLeft();
                 DisplayDrops();
             }
@@ -49,6 +58,8 @@ namespace Cycle_Tracker
             else if (e.VirtualKeyCode == Keys.F7)
                 deathToggle.Checked = !deathToggle.Checked;
             else if (e.VirtualKeyCode == Keys.F8)
+                refillToggle.Checked = !refillToggle.Checked;
+            else if (e.VirtualKeyCode == Keys.F9)
                 usedDropsToggle.Checked = !usedDropsToggle.Checked;
         }
 
@@ -87,7 +98,7 @@ namespace Cycle_Tracker
             {
                 for (int i = 0; i < usedDrops.Count; i++)
                 {
-                    switch (usedDrops[i])
+                    switch (usedDrops[usedDrops.Count - 1 - i])
                     {
                         case "max":
                             dropsList[i].Image = Resources.maxammo_small;
@@ -113,10 +124,11 @@ namespace Cycle_Tracker
                         case "bonus":
                             dropsList[i].Image = Resources.bonuspoints_small;
                             break;
+                        case "full":
+                            dropsList[i].Image = Resources.fullpower_small;
+                            break;
                         case "carpenter":
                             dropsList[i].Image = Resources.carpenter_small;
-                            break;
-                        default:
                             break;
                     }
                 }
@@ -160,8 +172,6 @@ namespace Cycle_Tracker
                             case "carpenter":
                                 dropCarpenter.Visible = true;
                                 break;
-                            default:
-                                break;
                         }
                     }
                 }
@@ -197,10 +207,11 @@ namespace Cycle_Tracker
                             case "bonus":
                                 dropBonus.Visible = true;
                                 break;
+                            case "full":
+                                dropFull.Visible = true;
+                                break;
                             case "carpenter":
                                 dropCarpenter.Visible = true;
-                                break;
-                            default:
                                 break;
                         }
                     }
@@ -237,6 +248,8 @@ namespace Cycle_Tracker
                 case 8:
                     return "bonus";
                 case 9:
+                    return "full";
+                case 10:
                     return "carpenter";
                 default:
                     return null;
@@ -256,6 +269,7 @@ namespace Cycle_Tracker
                     allDrops = new List<string> { "max", "insta", "double", "nuke" };
                     break;
                 case "5cycleAlt3":
+                case "5cycleAlt4":
                     allDrops = new List<string> { "max", "insta", "double", "nuke", "bonus" };
                     break;
                 case "6cycleAlt":
@@ -275,6 +289,7 @@ namespace Cycle_Tracker
             dropDeath.Image = Resources.deathmachine;
             dropBlood.Image = Resources.zombieblood;
             dropBonus.Image = Resources.bonuspoints;
+            dropFull.Image = Resources.fullpower;
             dropCarpenter.Image = Resources.carpenter;
             for (int i = 0; i < drops.Length; i++)
                 drops[i].Visible = false;
@@ -284,28 +299,20 @@ namespace Cycle_Tracker
             foundDisplay.ForeColor = Color.Red;
             foundDisplay.Font = new Font(foundDisplay.Font, FontStyle.Regular);
             found = false;
-            if ((cycleTag == "5cycle" || cycleTag == "5cycleAlt2" || cycleTag == "5cycleAlt3" || cycleTag == "6cycle" || cycleTag == "6cycleAlt" || cycleTag == "7cycle") && fireToggle.Checked)
+            if ((cycleTag == "5cycle" || cycleTag == "5cycleAlt2" || cycleTag == "5cycleAlt3" || cycleTag == "5cycleAlt4" || cycleTag == "6cycle" || cycleTag == "6cycleAlt" || cycleTag == "7cycle") && fireToggle.Checked)
             {
-                allDrops.Insert(4, "fire");
-                leftDrops.Insert(4, "fire");
+                allDrops.Add("fire");
+                leftDrops.Add("fire");
             }
             if ((cycleTag == "5cycleAlt" || cycleTag == "6cycle" || cycleTag == "7cycle") && deathToggle.Checked)
             {
-                if (fireToggle.Checked)
-                {
-                    allDrops.Insert(5, "death");
-                    leftDrops.Insert(5, "death");
-                }
-                else
-                {
-                    allDrops.Insert(4, "death");
-                    leftDrops.Insert(4, "death");
-                }
+                allDrops.Add("death");
+                leftDrops.Add("death");
             }
-            if ((cycleTag == "4cycleAlt" || cycleTag == "5cycle" || cycleTag == "5cycleAlt" || cycleTag == "5cycleAlt3" || cycleTag == "6cycle" || cycleTag == "7cycle") && carpToggle.Checked)
+            if ((cycleTag == "4cycleAlt" || cycleTag == "5cycle" || cycleTag == "5cycleAlt" || cycleTag == "5cycleAlt3" || cycleTag == "5cycleAlt4" || cycleTag == "6cycle" || cycleTag == "7cycle") && carpToggle.Checked)
             {
-                allDrops.Insert(allDrops.Count, "carpenter");
-                leftDrops.Insert(leftDrops.Count, "carpenter");
+                allDrops.Add("carpenter");
+                leftDrops.Add("carpenter");
             }
         }
 
@@ -315,12 +322,14 @@ namespace Cycle_Tracker
             tabControl.TabPages.Remove(bo1Tab);
             tabControl.TabPages.Remove(bo2Tab);
             tabControl.TabPages.Remove(bo3Tab);
+            tabControl.TabPages.Remove(bo4Tab);
             tabControl.TabPages.Remove(bocwTab);
             tabControl.TabPages.Insert(1,
                 sender == waw ? wawTab :
                 sender == bo1 ? bo1Tab :
                 sender == bo2 ? bo2Tab :
                 sender == bo3 ? bo3Tab :
+                sender == bo4 ? bo4Tab :
                 bocwTab);
             if (sender == waw)
                 tabControl.SelectedTab = wawTab;
@@ -330,6 +339,8 @@ namespace Cycle_Tracker
                 tabControl.SelectedTab = bo2Tab;
             if (sender == bo3)
                 tabControl.SelectedTab = bo3Tab;
+            if (sender == bo4)
+                tabControl.SelectedTab = bo4Tab;
             if (sender == bocw)
                 tabControl.SelectedTab = bocwTab;
         }
@@ -391,12 +402,12 @@ namespace Cycle_Tracker
                 carpToggle.Font = new Font(carpToggle.Font, FontStyle.Bold);
             else
                 carpToggle.Font = new Font(carpToggle.Font, FontStyle.Regular);
-            if (cycleTag == "4cycleAlt" || cycleTag == "5cycle" || cycleTag == "5cycleAlt" || cycleTag == "5cycleAlt3" || cycleTag == "6cycle" || cycleTag == "7cycle")
+            if (cycleTag == "4cycleAlt" || cycleTag == "5cycle" || cycleTag == "5cycleAlt" || cycleTag == "5cycleAlt3" || cycleTag == "5cycleAlt4" || cycleTag == "6cycle" || cycleTag == "7cycle")
             {
                 if (carpToggle.Checked)
                 {
-                    allDrops.Insert(allDrops.Count, "carpenter");
-                    leftDrops.Insert(leftDrops.Count, "carpenter");
+                    allDrops.Add("carpenter");
+                    leftDrops.Add("carpenter");
                     dropCarpenter.Visible = true;
                 }
                 else
@@ -419,12 +430,12 @@ namespace Cycle_Tracker
             else
                 fireToggle.Font = new Font(fireToggle.Font, FontStyle.Regular);
 
-            if (cycleTag == "5cycle" || cycleTag == "5cycleAlt2" || cycleTag == "5cycleAlt3" || cycleTag == "6cycle" || cycleTag == "6cycleAlt" || cycleTag == "7cycle")
+            if (cycleTag == "5cycle" || cycleTag == "5cycleAlt2" || cycleTag == "5cycleAlt3" || cycleTag == "5cycleAlt4" || cycleTag == "6cycle" || cycleTag == "6cycleAlt" || cycleTag == "7cycle")
             {
                 if (fireToggle.Checked)
                 {
-                    allDrops.Insert(4, "fire");
-                    leftDrops.Insert(4, "fire");
+                    allDrops.Add("fire");
+                    leftDrops.Add("fire");
                     dropFire.Visible = true;
                 }
                 else
@@ -450,16 +461,8 @@ namespace Cycle_Tracker
             {
                 if (deathToggle.Checked)
                 {
-                    if (fireToggle.Checked)
-                    {
-                        allDrops.Insert(5, "death");
-                        leftDrops.Insert(5, "death");
-                    }
-                    else
-                    {
-                        allDrops.Insert(4, "death");
-                        leftDrops.Insert(4, "death");
-                    }
+                    allDrops.Add("death");
+                    leftDrops.Add("death");
                     dropDeath.Visible = true;
                 }
                 else
@@ -473,6 +476,35 @@ namespace Cycle_Tracker
                 if (startButton.Text != "Start")
                     DisplayDrops();
             }
+        }
+
+        private void refillToggle_CheckedChanged(object sender, EventArgs e)
+        {
+            if (refillToggle.Checked)
+                refillToggle.Font = new Font(refillToggle.Font, FontStyle.Bold);
+            else
+                refillToggle.Font = new Font(refillToggle.Font, FontStyle.Regular);
+            if (cycleTag == "5cycleAlt4")
+            {
+                if (refillToggle.Checked)
+                {
+                    allDrops.Add("full");
+                    leftDrops.Add("full");
+                    dropFull.Visible = true;
+                }
+
+
+                else
+                {
+                    allDrops.Remove("full");
+                    leftDrops.Remove("full");
+                    dropFull.Visible = false;
+                }
+            }
+            inputDrop = null;
+            CalculateDropsLeft();
+            if (startButton.Text != "Start")
+                DisplayDrops();
         }
     }
 }
