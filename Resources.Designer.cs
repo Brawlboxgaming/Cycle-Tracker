@@ -163,6 +163,26 @@ namespace Cycle_Tracker {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fullpower {
+            get {
+                object obj = ResourceManager.GetObject("fullpower", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fullpower_small {
+            get {
+                object obj = ResourceManager.GetObject("fullpower_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap instakill {
             get {
                 object obj = ResourceManager.GetObject("instakill", resourceCulture);

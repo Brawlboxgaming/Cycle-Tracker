@@ -69,20 +69,20 @@ namespace Cycle_Tracker
             this.bo2Button9 = new System.Windows.Forms.Button();
             this.bo3Tab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.bo3Button13 = new System.Windows.Forms.Button();
+            this.bo3Button14 = new System.Windows.Forms.Button();
+            this.bo3Button1 = new System.Windows.Forms.Button();
+            this.bo3Button2 = new System.Windows.Forms.Button();
+            this.bo3Button3 = new System.Windows.Forms.Button();
+            this.bo3Button5 = new System.Windows.Forms.Button();
+            this.bo3Button4 = new System.Windows.Forms.Button();
+            this.bo3Button6 = new System.Windows.Forms.Button();
+            this.bo3Button7 = new System.Windows.Forms.Button();
+            this.bo3Button8 = new System.Windows.Forms.Button();
+            this.bo3Button9 = new System.Windows.Forms.Button();
+            this.bo3Button10 = new System.Windows.Forms.Button();
+            this.bo3Button11 = new System.Windows.Forms.Button();
+            this.bo3Button12 = new System.Windows.Forms.Button();
             this.bocwTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.bocwButton1 = new System.Windows.Forms.Button();
@@ -118,6 +118,19 @@ namespace Cycle_Tracker
             this.restartButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.carpToggle = new System.Windows.Forms.CheckBox();
+            this.bo4 = new System.Windows.Forms.Button();
+            this.bo4Tab = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.bo4Button1 = new System.Windows.Forms.Button();
+            this.bo4Button2 = new System.Windows.Forms.Button();
+            this.bo4Button3 = new System.Windows.Forms.Button();
+            this.bo4Button4 = new System.Windows.Forms.Button();
+            this.bo4Button5 = new System.Windows.Forms.Button();
+            this.bo4Button6 = new System.Windows.Forms.Button();
+            this.bo4Button8 = new System.Windows.Forms.Button();
+            this.bo4Button7 = new System.Windows.Forms.Button();
+            this.refillToggle = new System.Windows.Forms.CheckBox();
+            this.dropFull = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.game.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -153,6 +166,9 @@ namespace Cycle_Tracker
             ((System.ComponentModel.ISupportInitialize)(this.dropList2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropList1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropMax)).BeginInit();
+            this.bo4Tab.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dropFull)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -162,6 +178,7 @@ namespace Cycle_Tracker
             this.tabControl.Controls.Add(this.bo1Tab);
             this.tabControl.Controls.Add(this.bo2Tab);
             this.tabControl.Controls.Add(this.bo3Tab);
+            this.tabControl.Controls.Add(this.bo4Tab);
             this.tabControl.Controls.Add(this.bocwTab);
             this.tabControl.Controls.Add(this.tracker);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -188,11 +205,12 @@ namespace Cycle_Tracker
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.002F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.998F));
-            this.tableLayoutPanel1.Controls.Add(this.bocw, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.bo4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.waw, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.bo1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.bo2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.bo3, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.bocw, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -211,7 +229,7 @@ namespace Cycle_Tracker
             this.bocw.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bocw.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bocw.Image = ((System.Drawing.Image)(resources.GetObject("bocw.Image")));
-            this.bocw.Location = new System.Drawing.Point(134, 439);
+            this.bocw.Location = new System.Drawing.Point(759, 439);
             this.bocw.Name = "bocw";
             this.bocw.Size = new System.Drawing.Size(356, 203);
             this.bocw.TabIndex = 8;
@@ -746,20 +764,20 @@ namespace Cycle_Tracker
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Controls.Add(this.button16, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.button15, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button5, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button4, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button2, 3, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button6, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button7, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button8, 3, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button9, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.button10, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.button11, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.button12, 3, 2);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button13, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button14, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button1, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button3, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button5, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button4, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button6, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button7, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button8, 3, 1);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button9, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button10, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button11, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.bo3Button12, 3, 2);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -772,215 +790,215 @@ namespace Cycle_Tracker
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1256, 655);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
-            // button16
+            // bo3Button13
             // 
-            this.button16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button16.AutoSize = true;
-            this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button16.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(39, 504);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(236, 135);
-            this.button16.TabIndex = 21;
-            this.button16.Tag = "6cycle";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button13.AutoSize = true;
+            this.bo3Button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button13.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button13.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button13.Image")));
+            this.bo3Button13.Location = new System.Drawing.Point(39, 504);
+            this.bo3Button13.Name = "bo3Button13";
+            this.bo3Button13.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button13.TabIndex = 21;
+            this.bo3Button13.Tag = "6cycle";
+            this.bo3Button13.UseVisualStyleBackColor = true;
+            this.bo3Button13.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button15
+            // bo3Button14
             // 
-            this.button15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button15.AutoSize = true;
-            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button15.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(353, 504);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(236, 135);
-            this.button15.TabIndex = 20;
-            this.button15.Tag = "7cycle";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button14.AutoSize = true;
+            this.bo3Button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button14.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button14.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button14.Image")));
+            this.bo3Button14.Location = new System.Drawing.Point(353, 504);
+            this.bo3Button14.Name = "bo3Button14";
+            this.bo3Button14.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button14.TabIndex = 20;
+            this.bo3Button14.Tag = "7cycle";
+            this.bo3Button14.UseVisualStyleBackColor = true;
+            this.bo3Button14.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button1
+            // bo3Button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(39, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 135);
-            this.button1.TabIndex = 6;
-            this.button1.Tag = "6cycle";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button1.AutoSize = true;
+            this.bo3Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button1.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button1.Image")));
+            this.bo3Button1.Location = new System.Drawing.Point(39, 14);
+            this.bo3Button1.Name = "bo3Button1";
+            this.bo3Button1.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button1.TabIndex = 6;
+            this.bo3Button1.Tag = "6cycle";
+            this.bo3Button1.UseVisualStyleBackColor = true;
+            this.bo3Button1.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button5
+            // bo3Button2
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.AutoSize = true;
-            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(353, 14);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(236, 135);
-            this.button5.TabIndex = 10;
-            this.button5.Tag = "6cycle";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button2.AutoSize = true;
+            this.bo3Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button2.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button2.Image")));
+            this.bo3Button2.Location = new System.Drawing.Point(353, 14);
+            this.bo3Button2.Name = "bo3Button2";
+            this.bo3Button2.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button2.TabIndex = 10;
+            this.bo3Button2.Tag = "6cycle";
+            this.bo3Button2.UseVisualStyleBackColor = true;
+            this.bo3Button2.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button3
+            // bo3Button3
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.AutoSize = true;
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(667, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(236, 135);
-            this.button3.TabIndex = 8;
-            this.button3.Tag = "6cycle";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button3.AutoSize = true;
+            this.bo3Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button3.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button3.Image")));
+            this.bo3Button3.Location = new System.Drawing.Point(667, 14);
+            this.bo3Button3.Name = "bo3Button3";
+            this.bo3Button3.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button3.TabIndex = 8;
+            this.bo3Button3.Tag = "6cycle";
+            this.bo3Button3.UseVisualStyleBackColor = true;
+            this.bo3Button3.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button4
+            // bo3Button5
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.AutoSize = true;
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(39, 177);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(236, 135);
-            this.button4.TabIndex = 9;
-            this.button4.Tag = "6cycle";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button5.AutoSize = true;
+            this.bo3Button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button5.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button5.Image")));
+            this.bo3Button5.Location = new System.Drawing.Point(39, 177);
+            this.bo3Button5.Name = "bo3Button5";
+            this.bo3Button5.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button5.TabIndex = 9;
+            this.bo3Button5.Tag = "6cycle";
+            this.bo3Button5.UseVisualStyleBackColor = true;
+            this.bo3Button5.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button2
+            // bo3Button4
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.AutoSize = true;
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(981, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(236, 135);
-            this.button2.TabIndex = 7;
-            this.button2.Tag = "6cycle";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button4.AutoSize = true;
+            this.bo3Button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button4.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button4.Image")));
+            this.bo3Button4.Location = new System.Drawing.Point(981, 14);
+            this.bo3Button4.Name = "bo3Button4";
+            this.bo3Button4.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button4.TabIndex = 7;
+            this.bo3Button4.Tag = "6cycle";
+            this.bo3Button4.UseVisualStyleBackColor = true;
+            this.bo3Button4.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button6
+            // bo3Button6
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.AutoSize = true;
-            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(353, 177);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(236, 135);
-            this.button6.TabIndex = 11;
-            this.button6.Tag = "6cycle";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button6.AutoSize = true;
+            this.bo3Button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button6.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button6.Image")));
+            this.bo3Button6.Location = new System.Drawing.Point(353, 177);
+            this.bo3Button6.Name = "bo3Button6";
+            this.bo3Button6.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button6.TabIndex = 11;
+            this.bo3Button6.Tag = "6cycle";
+            this.bo3Button6.UseVisualStyleBackColor = true;
+            this.bo3Button6.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button7
+            // bo3Button7
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.AutoSize = true;
-            this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(667, 177);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(236, 135);
-            this.button7.TabIndex = 12;
-            this.button7.Tag = "5cycleAlt";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button7.AutoSize = true;
+            this.bo3Button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button7.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button7.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button7.Image")));
+            this.bo3Button7.Location = new System.Drawing.Point(667, 177);
+            this.bo3Button7.Name = "bo3Button7";
+            this.bo3Button7.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button7.TabIndex = 12;
+            this.bo3Button7.Tag = "5cycleAlt";
+            this.bo3Button7.UseVisualStyleBackColor = true;
+            this.bo3Button7.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button8
+            // bo3Button8
             // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button8.AutoSize = true;
-            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(981, 177);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(236, 135);
-            this.button8.TabIndex = 13;
-            this.button8.Tag = "6cycle";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button8.AutoSize = true;
+            this.bo3Button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button8.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button8.Image")));
+            this.bo3Button8.Location = new System.Drawing.Point(981, 177);
+            this.bo3Button8.Name = "bo3Button8";
+            this.bo3Button8.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button8.TabIndex = 13;
+            this.bo3Button8.Tag = "6cycle";
+            this.bo3Button8.UseVisualStyleBackColor = true;
+            this.bo3Button8.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button9
+            // bo3Button9
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.AutoSize = true;
-            this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(39, 340);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(236, 135);
-            this.button9.TabIndex = 14;
-            this.button9.Tag = "6cycle";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button9.AutoSize = true;
+            this.bo3Button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button9.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button9.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button9.Image")));
+            this.bo3Button9.Location = new System.Drawing.Point(39, 340);
+            this.bo3Button9.Name = "bo3Button9";
+            this.bo3Button9.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button9.TabIndex = 14;
+            this.bo3Button9.Tag = "6cycle";
+            this.bo3Button9.UseVisualStyleBackColor = true;
+            this.bo3Button9.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button10
+            // bo3Button10
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button10.AutoSize = true;
-            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button10.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(353, 340);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(236, 135);
-            this.button10.TabIndex = 15;
-            this.button10.Tag = "6cycle";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button10.AutoSize = true;
+            this.bo3Button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button10.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button10.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button10.Image")));
+            this.bo3Button10.Location = new System.Drawing.Point(353, 340);
+            this.bo3Button10.Name = "bo3Button10";
+            this.bo3Button10.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button10.TabIndex = 15;
+            this.bo3Button10.Tag = "6cycle";
+            this.bo3Button10.UseVisualStyleBackColor = true;
+            this.bo3Button10.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button11
+            // bo3Button11
             // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button11.AutoSize = true;
-            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button11.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(667, 340);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(236, 135);
-            this.button11.TabIndex = 16;
-            this.button11.Tag = "6cycle";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button11.AutoSize = true;
+            this.bo3Button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button11.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button11.Image")));
+            this.bo3Button11.Location = new System.Drawing.Point(667, 340);
+            this.bo3Button11.Name = "bo3Button11";
+            this.bo3Button11.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button11.TabIndex = 16;
+            this.bo3Button11.Tag = "6cycle";
+            this.bo3Button11.UseVisualStyleBackColor = true;
+            this.bo3Button11.Click += new System.EventHandler(this.mapButton_Click);
             // 
-            // button12
+            // bo3Button12
             // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button12.AutoSize = true;
-            this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button12.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(981, 340);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(236, 135);
-            this.button12.TabIndex = 17;
-            this.button12.Tag = "6cycle";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.mapButton_Click);
+            this.bo3Button12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo3Button12.AutoSize = true;
+            this.bo3Button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo3Button12.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo3Button12.Image = ((System.Drawing.Image)(resources.GetObject("bo3Button12.Image")));
+            this.bo3Button12.Location = new System.Drawing.Point(981, 340);
+            this.bo3Button12.Name = "bo3Button12";
+            this.bo3Button12.Size = new System.Drawing.Size(236, 135);
+            this.bo3Button12.TabIndex = 17;
+            this.bo3Button12.Tag = "6cycle";
+            this.bo3Button12.UseVisualStyleBackColor = true;
+            this.bo3Button12.Click += new System.EventHandler(this.mapButton_Click);
             // 
             // bocwTab
             // 
@@ -1045,6 +1063,8 @@ namespace Cycle_Tracker
             // tracker
             // 
             this.tracker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.tracker.Controls.Add(this.dropFull);
+            this.tracker.Controls.Add(this.refillToggle);
             this.tracker.Controls.Add(this.dropCarpenter);
             this.tracker.Controls.Add(this.dropBonus);
             this.tracker.Controls.Add(this.dropBlood);
@@ -1084,7 +1104,7 @@ namespace Cycle_Tracker
             // 
             // dropCarpenter
             // 
-            this.dropCarpenter.Location = new System.Drawing.Point(108, 465);
+            this.dropCarpenter.Location = new System.Drawing.Point(290, 461);
             this.dropCarpenter.Name = "dropCarpenter";
             this.dropCarpenter.Size = new System.Drawing.Size(150, 150);
             this.dropCarpenter.TabIndex = 31;
@@ -1289,7 +1309,7 @@ namespace Cycle_Tracker
             // 
             this.deathToggle.AutoSize = true;
             this.deathToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deathToggle.Location = new System.Drawing.Point(438, 13);
+            this.deathToggle.Location = new System.Drawing.Point(342, 13);
             this.deathToggle.Name = "deathToggle";
             this.deathToggle.Size = new System.Drawing.Size(208, 32);
             this.deathToggle.TabIndex = 8;
@@ -1301,7 +1321,7 @@ namespace Cycle_Tracker
             // 
             this.fireToggle.AutoSize = true;
             this.fireToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fireToggle.Location = new System.Drawing.Point(238, 13);
+            this.fireToggle.Location = new System.Drawing.Point(183, 13);
             this.fireToggle.Name = "fireToggle";
             this.fireToggle.Size = new System.Drawing.Size(153, 32);
             this.fireToggle.TabIndex = 7;
@@ -1324,7 +1344,7 @@ namespace Cycle_Tracker
             // 
             this.usedDropsToggle.AutoSize = true;
             this.usedDropsToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usedDropsToggle.Location = new System.Drawing.Point(685, 13);
+            this.usedDropsToggle.Location = new System.Drawing.Point(719, 13);
             this.usedDropsToggle.Name = "usedDropsToggle";
             this.usedDropsToggle.Size = new System.Drawing.Size(212, 32);
             this.usedDropsToggle.TabIndex = 5;
@@ -1362,13 +1382,203 @@ namespace Cycle_Tracker
             // 
             this.carpToggle.AutoSize = true;
             this.carpToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carpToggle.Location = new System.Drawing.Point(39, 13);
+            this.carpToggle.Location = new System.Drawing.Point(8, 13);
             this.carpToggle.Name = "carpToggle";
             this.carpToggle.Size = new System.Drawing.Size(169, 32);
             this.carpToggle.TabIndex = 1;
             this.carpToggle.Text = "Track Carpenters";
             this.carpToggle.UseVisualStyleBackColor = true;
             this.carpToggle.CheckedChanged += new System.EventHandler(this.carpToggle_CheckedChanged);
+            // 
+            // bo4
+            // 
+            this.bo4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4.AutoSize = true;
+            this.bo4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4.Image = ((System.Drawing.Image)(resources.GetObject("bo4.Image")));
+            this.bo4.Location = new System.Drawing.Point(134, 439);
+            this.bo4.Name = "bo4";
+            this.bo4.Size = new System.Drawing.Size(356, 203);
+            this.bo4.TabIndex = 9;
+            this.bo4.UseVisualStyleBackColor = true;
+            this.bo4.Click += new System.EventHandler(this.gameButton_Clicked);
+            // 
+            // bo4Tab
+            // 
+            this.bo4Tab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.bo4Tab.Controls.Add(this.tableLayoutPanel7);
+            this.bo4Tab.Location = new System.Drawing.Point(4, 22);
+            this.bo4Tab.Name = "bo4Tab";
+            this.bo4Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.bo4Tab.Size = new System.Drawing.Size(1256, 655);
+            this.bo4Tab.TabIndex = 8;
+            this.bo4Tab.Text = "Map";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button7, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button8, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button1, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button2, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button3, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button4, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button5, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button6, 2, 1);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33112F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1250, 649);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // bo4Button1
+            // 
+            this.bo4Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button1.AutoSize = true;
+            this.bo4Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button1.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button1.Image")));
+            this.bo4Button1.Location = new System.Drawing.Point(42, 13);
+            this.bo4Button1.Name = "bo4Button1";
+            this.bo4Button1.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button1.TabIndex = 5;
+            this.bo4Button1.Tag = "5cycleAlt4";
+            this.bo4Button1.UseVisualStyleBackColor = true;
+            this.bo4Button1.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button2
+            // 
+            this.bo4Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button2.AutoSize = true;
+            this.bo4Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button2.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button2.Image")));
+            this.bo4Button2.Location = new System.Drawing.Point(458, 13);
+            this.bo4Button2.Name = "bo4Button2";
+            this.bo4Button2.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button2.TabIndex = 6;
+            this.bo4Button2.Tag = "5cycleAlt4";
+            this.bo4Button2.UseVisualStyleBackColor = true;
+            this.bo4Button2.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button3
+            // 
+            this.bo4Button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button3.AutoSize = true;
+            this.bo4Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button3.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button3.Image")));
+            this.bo4Button3.Location = new System.Drawing.Point(875, 13);
+            this.bo4Button3.Name = "bo4Button3";
+            this.bo4Button3.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button3.TabIndex = 7;
+            this.bo4Button3.Tag = "5cycleAlt4";
+            this.bo4Button3.UseVisualStyleBackColor = true;
+            this.bo4Button3.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button4
+            // 
+            this.bo4Button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button4.AutoSize = true;
+            this.bo4Button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button4.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button4.Image")));
+            this.bo4Button4.Location = new System.Drawing.Point(42, 229);
+            this.bo4Button4.Name = "bo4Button4";
+            this.bo4Button4.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button4.TabIndex = 9;
+            this.bo4Button4.Tag = "5cycleAlt4";
+            this.bo4Button4.UseVisualStyleBackColor = true;
+            this.bo4Button4.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button5
+            // 
+            this.bo4Button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button5.AutoSize = true;
+            this.bo4Button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button5.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button5.Image")));
+            this.bo4Button5.Location = new System.Drawing.Point(458, 229);
+            this.bo4Button5.Name = "bo4Button5";
+            this.bo4Button5.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button5.TabIndex = 10;
+            this.bo4Button5.Tag = "5cycleAlt4";
+            this.bo4Button5.UseVisualStyleBackColor = true;
+            this.bo4Button5.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button6
+            // 
+            this.bo4Button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button6.AutoSize = true;
+            this.bo4Button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button6.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button6.Image")));
+            this.bo4Button6.Location = new System.Drawing.Point(875, 229);
+            this.bo4Button6.Name = "bo4Button6";
+            this.bo4Button6.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button6.TabIndex = 11;
+            this.bo4Button6.Tag = "5cycleAlt4";
+            this.bo4Button6.UseVisualStyleBackColor = true;
+            this.bo4Button6.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button8
+            // 
+            this.bo4Button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button8.AutoSize = true;
+            this.bo4Button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button8.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button8.Image")));
+            this.bo4Button8.Location = new System.Drawing.Point(458, 446);
+            this.bo4Button8.Name = "bo4Button8";
+            this.bo4Button8.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button8.TabIndex = 12;
+            this.bo4Button8.Tag = "5cycleAlt4";
+            this.bo4Button8.UseVisualStyleBackColor = true;
+            this.bo4Button8.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button7
+            // 
+            this.bo4Button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button7.AutoSize = true;
+            this.bo4Button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button7.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button7.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button7.Image")));
+            this.bo4Button7.Location = new System.Drawing.Point(42, 446);
+            this.bo4Button7.Name = "bo4Button7";
+            this.bo4Button7.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button7.TabIndex = 13;
+            this.bo4Button7.Tag = "5cycleAlt4";
+            this.bo4Button7.UseVisualStyleBackColor = true;
+            this.bo4Button7.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // refillToggle
+            // 
+            this.refillToggle.AutoSize = true;
+            this.refillToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refillToggle.Location = new System.Drawing.Point(556, 13);
+            this.refillToggle.Name = "refillToggle";
+            this.refillToggle.Size = new System.Drawing.Size(157, 32);
+            this.refillToggle.TabIndex = 32;
+            this.refillToggle.Text = "Track Full Power";
+            this.refillToggle.UseVisualStyleBackColor = true;
+            this.refillToggle.CheckedChanged += new System.EventHandler(this.refillToggle_CheckedChanged);
+            // 
+            // dropFull
+            // 
+            this.dropFull.Location = new System.Drawing.Point(108, 461);
+            this.dropFull.Name = "dropFull";
+            this.dropFull.Size = new System.Drawing.Size(150, 150);
+            this.dropFull.TabIndex = 33;
+            this.dropFull.TabStop = false;
             // 
             // VisualForm
             // 
@@ -1423,6 +1633,10 @@ namespace Cycle_Tracker
             ((System.ComponentModel.ISupportInitialize)(this.dropList2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropList1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropMax)).EndInit();
+            this.bo4Tab.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dropFull)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1477,20 +1691,20 @@ namespace Cycle_Tracker
         private System.Windows.Forms.Button bo2Button8;
         private System.Windows.Forms.Button bo2Button9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button bo3Button13;
+        private System.Windows.Forms.Button bo3Button14;
+        private System.Windows.Forms.Button bo3Button1;
+        private System.Windows.Forms.Button bo3Button2;
+        private System.Windows.Forms.Button bo3Button3;
+        private System.Windows.Forms.Button bo3Button5;
+        private System.Windows.Forms.Button bo3Button4;
+        private System.Windows.Forms.Button bo3Button6;
+        private System.Windows.Forms.Button bo3Button7;
+        private System.Windows.Forms.Button bo3Button8;
+        private System.Windows.Forms.Button bo3Button9;
+        private System.Windows.Forms.Button bo3Button10;
+        private System.Windows.Forms.Button bo3Button11;
+        private System.Windows.Forms.Button bo3Button12;
         private System.Windows.Forms.PictureBox dropMax;
         private System.Windows.Forms.PictureBox dropBonus;
         private System.Windows.Forms.PictureBox dropBlood;
@@ -1517,5 +1731,18 @@ namespace Cycle_Tracker
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button bocwButton1;
         private System.Windows.Forms.Button bocwButton2;
+        private System.Windows.Forms.Button bo4;
+        private System.Windows.Forms.TabPage bo4Tab;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Button bo4Button7;
+        private System.Windows.Forms.Button bo4Button8;
+        private System.Windows.Forms.Button bo4Button1;
+        private System.Windows.Forms.Button bo4Button2;
+        private System.Windows.Forms.Button bo4Button3;
+        private System.Windows.Forms.Button bo4Button4;
+        private System.Windows.Forms.Button bo4Button5;
+        private System.Windows.Forms.Button bo4Button6;
+        private System.Windows.Forms.CheckBox refillToggle;
+        private System.Windows.Forms.PictureBox dropFull;
     }
 }
