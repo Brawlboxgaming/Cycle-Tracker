@@ -32,6 +32,8 @@ There are a couple of hotkeys that have been added to make it easier to use in-g
 	F8 = Toggle Full Power tracking
 	F9 = Toggle "Last 12 Drops:" display
 
-https://cdn.discordapp.com/attachments/488281180245065729/835148708790272010/unknown.png
-https://cdn.discordapp.com/attachments/488281180245065729/835148732323332157/unknown.png
-https://cdn.discordapp.com/attachments/488281180245065729/835148803984064573/unknown.png
+![games](https://user-images.githubusercontent.com/71042104/115881323-8836f800-a443-11eb-9ee8-5bb345eb8a05.png)
+
+![maps](https://user-images.githubusercontent.com/71042104/115881335-8a995200-a443-11eb-9e68-9abf663f14d8.png)
+
+![tracker](https://user-images.githubusercontent.com/71042104/115881337-8c631580-a443-11eb-9985-539912bf9e57.png)
