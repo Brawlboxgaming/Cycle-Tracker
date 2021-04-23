@@ -31,3 +31,7 @@ There are a couple of hotkeys that have been added to make it easier to use in-g
 	F7 = Toggle Death Machine tracking
 	F8 = Toggle Full Power tracking
 	F9 = Toggle "Last 12 Drops:" display
+
+https://cdn.discordapp.com/attachments/488281180245065729/835148708790272010/unknown.png
+https://cdn.discordapp.com/attachments/488281180245065729/835148732323332157/unknown.png
+https://cdn.discordapp.com/attachments/488281180245065729/835148803984064573/unknown.png
