@@ -37,3 +37,7 @@ There are a couple of hotkeys that have been added to make it easier to use in-g
 ![maps](https://user-images.githubusercontent.com/71042104/115881335-8a995200-a443-11eb-9e68-9abf663f14d8.png)
 
 ![tracker](https://user-images.githubusercontent.com/71042104/115881337-8c631580-a443-11eb-9985-539912bf9e57.png)
+
+# Assets
+
+All icon and graphics assets from https://www.zombacus.com/dropcycle
