@@ -14,8 +14,8 @@ namespace Cycle_Tracker
         PictureBox[] dropsList;
         string inputDrop;
         string cycleTag = "4cycle";
-        List<string> allDrops;
-        List<string> leftDrops;
+        List<string> allDrops = new List<string>();
+        List<string> leftDrops = new List<string>();
         List<string> usedDrops = new List<string>();
         GlobalKeyboardListener keyboard;
 
