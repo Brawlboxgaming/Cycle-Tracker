@@ -4,7 +4,7 @@
  
  Currently, the only available games that are supported are:
  	
-	World at War
+	World at War (Only works some of the time due to World at War being inconsistent)
 	Black Ops
 	Black Ops 2
 	Black Ops 3
