@@ -33,11 +33,12 @@ namespace Cycle_Tracker
             this.tabControl = new System.Windows.Forms.TabControl();
             this.game = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.bocw = new System.Windows.Forms.Button();
+            this.bo4 = new System.Windows.Forms.Button();
             this.waw = new System.Windows.Forms.Button();
             this.bo1 = new System.Windows.Forms.Button();
             this.bo2 = new System.Windows.Forms.Button();
             this.bo3 = new System.Windows.Forms.Button();
+            this.bocw = new System.Windows.Forms.Button();
             this.wawTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.wawButton1 = new System.Windows.Forms.Button();
@@ -83,11 +84,24 @@ namespace Cycle_Tracker
             this.bo3Button10 = new System.Windows.Forms.Button();
             this.bo3Button11 = new System.Windows.Forms.Button();
             this.bo3Button12 = new System.Windows.Forms.Button();
+            this.bo4Tab = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.bo4Button7 = new System.Windows.Forms.Button();
+            this.bo4Button8 = new System.Windows.Forms.Button();
+            this.bo4Button1 = new System.Windows.Forms.Button();
+            this.bo4Button2 = new System.Windows.Forms.Button();
+            this.bo4Button3 = new System.Windows.Forms.Button();
+            this.bo4Button4 = new System.Windows.Forms.Button();
+            this.bo4Button5 = new System.Windows.Forms.Button();
+            this.bo4Button6 = new System.Windows.Forms.Button();
             this.bocwTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.bocwButton3 = new System.Windows.Forms.Button();
             this.bocwButton1 = new System.Windows.Forms.Button();
             this.bocwButton2 = new System.Windows.Forms.Button();
             this.tracker = new System.Windows.Forms.TabPage();
+            this.dropFull = new System.Windows.Forms.PictureBox();
+            this.refillToggle = new System.Windows.Forms.CheckBox();
             this.dropCarpenter = new System.Windows.Forms.PictureBox();
             this.dropBonus = new System.Windows.Forms.PictureBox();
             this.dropBlood = new System.Windows.Forms.PictureBox();
@@ -118,19 +132,6 @@ namespace Cycle_Tracker
             this.restartButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.carpToggle = new System.Windows.Forms.CheckBox();
-            this.bo4 = new System.Windows.Forms.Button();
-            this.bo4Tab = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.bo4Button1 = new System.Windows.Forms.Button();
-            this.bo4Button2 = new System.Windows.Forms.Button();
-            this.bo4Button3 = new System.Windows.Forms.Button();
-            this.bo4Button4 = new System.Windows.Forms.Button();
-            this.bo4Button5 = new System.Windows.Forms.Button();
-            this.bo4Button6 = new System.Windows.Forms.Button();
-            this.bo4Button8 = new System.Windows.Forms.Button();
-            this.bo4Button7 = new System.Windows.Forms.Button();
-            this.refillToggle = new System.Windows.Forms.CheckBox();
-            this.dropFull = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.game.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -142,9 +143,12 @@ namespace Cycle_Tracker
             this.tableLayoutPanel4.SuspendLayout();
             this.bo3Tab.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.bo4Tab.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.bocwTab.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tracker.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dropFull)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropCarpenter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropBlood)).BeginInit();
@@ -166,9 +170,6 @@ namespace Cycle_Tracker
             ((System.ComponentModel.ISupportInitialize)(this.dropList2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropList1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropMax)).BeginInit();
-            this.bo4Tab.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dropFull)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -222,19 +223,19 @@ namespace Cycle_Tracker
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1250, 649);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // bocw
+            // bo4
             // 
-            this.bocw.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bocw.AutoSize = true;
-            this.bocw.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bocw.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bocw.Image = ((System.Drawing.Image)(resources.GetObject("bocw.Image")));
-            this.bocw.Location = new System.Drawing.Point(759, 439);
-            this.bocw.Name = "bocw";
-            this.bocw.Size = new System.Drawing.Size(356, 203);
-            this.bocw.TabIndex = 8;
-            this.bocw.UseVisualStyleBackColor = true;
-            this.bocw.Click += new System.EventHandler(this.gameButton_Clicked);
+            this.bo4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4.AutoSize = true;
+            this.bo4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4.Image = ((System.Drawing.Image)(resources.GetObject("bo4.Image")));
+            this.bo4.Location = new System.Drawing.Point(134, 439);
+            this.bo4.Name = "bo4";
+            this.bo4.Size = new System.Drawing.Size(356, 203);
+            this.bo4.TabIndex = 9;
+            this.bo4.UseVisualStyleBackColor = true;
+            this.bo4.Click += new System.EventHandler(this.gameButton_Clicked);
             // 
             // waw
             // 
@@ -291,6 +292,20 @@ namespace Cycle_Tracker
             this.bo3.TabIndex = 7;
             this.bo3.UseVisualStyleBackColor = true;
             this.bo3.Click += new System.EventHandler(this.gameButton_Clicked);
+            // 
+            // bocw
+            // 
+            this.bocw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bocw.AutoSize = true;
+            this.bocw.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bocw.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bocw.Image = ((System.Drawing.Image)(resources.GetObject("bocw.Image")));
+            this.bocw.Location = new System.Drawing.Point(759, 439);
+            this.bocw.Name = "bocw";
+            this.bocw.Size = new System.Drawing.Size(356, 203);
+            this.bocw.TabIndex = 8;
+            this.bocw.UseVisualStyleBackColor = true;
+            this.bocw.Click += new System.EventHandler(this.gameButton_Clicked);
             // 
             // wawTab
             // 
@@ -1000,6 +1015,162 @@ namespace Cycle_Tracker
             this.bo3Button12.UseVisualStyleBackColor = true;
             this.bo3Button12.Click += new System.EventHandler(this.mapButton_Click);
             // 
+            // bo4Tab
+            // 
+            this.bo4Tab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.bo4Tab.Controls.Add(this.tableLayoutPanel7);
+            this.bo4Tab.Location = new System.Drawing.Point(4, 22);
+            this.bo4Tab.Name = "bo4Tab";
+            this.bo4Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.bo4Tab.Size = new System.Drawing.Size(1256, 655);
+            this.bo4Tab.TabIndex = 8;
+            this.bo4Tab.Text = "Map";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button7, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button8, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button1, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button2, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button3, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button4, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button5, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.bo4Button6, 2, 1);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33112F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1250, 649);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // bo4Button7
+            // 
+            this.bo4Button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button7.AutoSize = true;
+            this.bo4Button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button7.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button7.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button7.Image")));
+            this.bo4Button7.Location = new System.Drawing.Point(42, 446);
+            this.bo4Button7.Name = "bo4Button7";
+            this.bo4Button7.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button7.TabIndex = 13;
+            this.bo4Button7.Tag = "5cycleAlt4";
+            this.bo4Button7.UseVisualStyleBackColor = true;
+            this.bo4Button7.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button8
+            // 
+            this.bo4Button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button8.AutoSize = true;
+            this.bo4Button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button8.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button8.Image")));
+            this.bo4Button8.Location = new System.Drawing.Point(458, 446);
+            this.bo4Button8.Name = "bo4Button8";
+            this.bo4Button8.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button8.TabIndex = 12;
+            this.bo4Button8.Tag = "5cycleAlt4";
+            this.bo4Button8.UseVisualStyleBackColor = true;
+            this.bo4Button8.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button1
+            // 
+            this.bo4Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button1.AutoSize = true;
+            this.bo4Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button1.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button1.Image")));
+            this.bo4Button1.Location = new System.Drawing.Point(42, 13);
+            this.bo4Button1.Name = "bo4Button1";
+            this.bo4Button1.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button1.TabIndex = 5;
+            this.bo4Button1.Tag = "5cycleAlt4";
+            this.bo4Button1.UseVisualStyleBackColor = true;
+            this.bo4Button1.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button2
+            // 
+            this.bo4Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button2.AutoSize = true;
+            this.bo4Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button2.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button2.Image")));
+            this.bo4Button2.Location = new System.Drawing.Point(458, 13);
+            this.bo4Button2.Name = "bo4Button2";
+            this.bo4Button2.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button2.TabIndex = 6;
+            this.bo4Button2.Tag = "5cycleAlt4";
+            this.bo4Button2.UseVisualStyleBackColor = true;
+            this.bo4Button2.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button3
+            // 
+            this.bo4Button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button3.AutoSize = true;
+            this.bo4Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button3.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button3.Image")));
+            this.bo4Button3.Location = new System.Drawing.Point(875, 13);
+            this.bo4Button3.Name = "bo4Button3";
+            this.bo4Button3.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button3.TabIndex = 7;
+            this.bo4Button3.Tag = "5cycleAlt4";
+            this.bo4Button3.UseVisualStyleBackColor = true;
+            this.bo4Button3.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button4
+            // 
+            this.bo4Button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button4.AutoSize = true;
+            this.bo4Button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button4.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button4.Image")));
+            this.bo4Button4.Location = new System.Drawing.Point(42, 229);
+            this.bo4Button4.Name = "bo4Button4";
+            this.bo4Button4.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button4.TabIndex = 9;
+            this.bo4Button4.Tag = "5cycleAlt4";
+            this.bo4Button4.UseVisualStyleBackColor = true;
+            this.bo4Button4.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button5
+            // 
+            this.bo4Button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button5.AutoSize = true;
+            this.bo4Button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button5.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button5.Image")));
+            this.bo4Button5.Location = new System.Drawing.Point(458, 229);
+            this.bo4Button5.Name = "bo4Button5";
+            this.bo4Button5.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button5.TabIndex = 10;
+            this.bo4Button5.Tag = "5cycleAlt4";
+            this.bo4Button5.UseVisualStyleBackColor = true;
+            this.bo4Button5.Click += new System.EventHandler(this.mapButton_Click);
+            // 
+            // bo4Button6
+            // 
+            this.bo4Button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bo4Button6.AutoSize = true;
+            this.bo4Button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bo4Button6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bo4Button6.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button6.Image")));
+            this.bo4Button6.Location = new System.Drawing.Point(875, 229);
+            this.bo4Button6.Name = "bo4Button6";
+            this.bo4Button6.Size = new System.Drawing.Size(331, 189);
+            this.bo4Button6.TabIndex = 11;
+            this.bo4Button6.Tag = "5cycleAlt4";
+            this.bo4Button6.UseVisualStyleBackColor = true;
+            this.bo4Button6.Click += new System.EventHandler(this.mapButton_Click);
+            // 
             // bocwTab
             // 
             this.bocwTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -1017,18 +1188,32 @@ namespace Cycle_Tracker
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.002F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.998F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.Controls.Add(this.bocwButton3, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.bocwButton1, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.bocwButton2, 1, 0);
             this.tableLayoutPanel6.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(1250, 649);
             this.tableLayoutPanel6.TabIndex = 6;
+            // 
+            // bocwButton3
+            // 
+            this.bocwButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bocwButton3.AutoSize = true;
+            this.bocwButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bocwButton3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bocwButton3.Image = ((System.Drawing.Image)(resources.GetObject("bocwButton3.Image")));
+            this.bocwButton3.Location = new System.Drawing.Point(59, 343);
+            this.bocwButton3.Name = "bocwButton3";
+            this.bocwButton3.Size = new System.Drawing.Size(506, 287);
+            this.bocwButton3.TabIndex = 6;
+            this.bocwButton3.Tag = "5cycleAlt3";
+            this.bocwButton3.UseVisualStyleBackColor = true;
+            this.bocwButton3.Click += new System.EventHandler(this.mapButton_Click);
             // 
             // bocwButton1
             // 
@@ -1037,7 +1222,7 @@ namespace Cycle_Tracker
             this.bocwButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bocwButton1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bocwButton1.Image = ((System.Drawing.Image)(resources.GetObject("bocwButton1.Image")));
-            this.bocwButton1.Location = new System.Drawing.Point(59, 181);
+            this.bocwButton1.Location = new System.Drawing.Point(59, 18);
             this.bocwButton1.Name = "bocwButton1";
             this.bocwButton1.Size = new System.Drawing.Size(506, 287);
             this.bocwButton1.TabIndex = 4;
@@ -1052,7 +1237,7 @@ namespace Cycle_Tracker
             this.bocwButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bocwButton2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bocwButton2.Image = ((System.Drawing.Image)(resources.GetObject("bocwButton2.Image")));
-            this.bocwButton2.Location = new System.Drawing.Point(684, 181);
+            this.bocwButton2.Location = new System.Drawing.Point(684, 18);
             this.bocwButton2.Name = "bocwButton2";
             this.bocwButton2.Size = new System.Drawing.Size(506, 287);
             this.bocwButton2.TabIndex = 5;
@@ -1101,6 +1286,26 @@ namespace Cycle_Tracker
             this.tracker.Size = new System.Drawing.Size(1256, 655);
             this.tracker.TabIndex = 2;
             this.tracker.Text = "Tracker";
+            // 
+            // dropFull
+            // 
+            this.dropFull.Location = new System.Drawing.Point(108, 461);
+            this.dropFull.Name = "dropFull";
+            this.dropFull.Size = new System.Drawing.Size(150, 150);
+            this.dropFull.TabIndex = 33;
+            this.dropFull.TabStop = false;
+            // 
+            // refillToggle
+            // 
+            this.refillToggle.AutoSize = true;
+            this.refillToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refillToggle.Location = new System.Drawing.Point(556, 13);
+            this.refillToggle.Name = "refillToggle";
+            this.refillToggle.Size = new System.Drawing.Size(157, 32);
+            this.refillToggle.TabIndex = 32;
+            this.refillToggle.Text = "Track Full Power";
+            this.refillToggle.UseVisualStyleBackColor = true;
+            this.refillToggle.CheckedChanged += new System.EventHandler(this.refillToggle_CheckedChanged);
             // 
             // dropCarpenter
             // 
@@ -1390,196 +1595,6 @@ namespace Cycle_Tracker
             this.carpToggle.UseVisualStyleBackColor = true;
             this.carpToggle.CheckedChanged += new System.EventHandler(this.carpToggle_CheckedChanged);
             // 
-            // bo4
-            // 
-            this.bo4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4.AutoSize = true;
-            this.bo4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4.Image = ((System.Drawing.Image)(resources.GetObject("bo4.Image")));
-            this.bo4.Location = new System.Drawing.Point(134, 439);
-            this.bo4.Name = "bo4";
-            this.bo4.Size = new System.Drawing.Size(356, 203);
-            this.bo4.TabIndex = 9;
-            this.bo4.UseVisualStyleBackColor = true;
-            this.bo4.Click += new System.EventHandler(this.gameButton_Clicked);
-            // 
-            // bo4Tab
-            // 
-            this.bo4Tab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.bo4Tab.Controls.Add(this.tableLayoutPanel7);
-            this.bo4Tab.Location = new System.Drawing.Point(4, 22);
-            this.bo4Tab.Name = "bo4Tab";
-            this.bo4Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.bo4Tab.Size = new System.Drawing.Size(1256, 655);
-            this.bo4Tab.TabIndex = 8;
-            this.bo4Tab.Text = "Map";
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.tableLayoutPanel7.ColumnCount = 3;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button7, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button8, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button1, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button2, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button3, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button4, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button5, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.bo4Button6, 2, 1);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 3;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33112F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1250, 649);
-            this.tableLayoutPanel7.TabIndex = 2;
-            // 
-            // bo4Button1
-            // 
-            this.bo4Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button1.AutoSize = true;
-            this.bo4Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button1.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button1.Image")));
-            this.bo4Button1.Location = new System.Drawing.Point(42, 13);
-            this.bo4Button1.Name = "bo4Button1";
-            this.bo4Button1.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button1.TabIndex = 5;
-            this.bo4Button1.Tag = "5cycleAlt4";
-            this.bo4Button1.UseVisualStyleBackColor = true;
-            this.bo4Button1.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button2
-            // 
-            this.bo4Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button2.AutoSize = true;
-            this.bo4Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button2.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button2.Image")));
-            this.bo4Button2.Location = new System.Drawing.Point(458, 13);
-            this.bo4Button2.Name = "bo4Button2";
-            this.bo4Button2.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button2.TabIndex = 6;
-            this.bo4Button2.Tag = "5cycleAlt4";
-            this.bo4Button2.UseVisualStyleBackColor = true;
-            this.bo4Button2.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button3
-            // 
-            this.bo4Button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button3.AutoSize = true;
-            this.bo4Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button3.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button3.Image")));
-            this.bo4Button3.Location = new System.Drawing.Point(875, 13);
-            this.bo4Button3.Name = "bo4Button3";
-            this.bo4Button3.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button3.TabIndex = 7;
-            this.bo4Button3.Tag = "5cycleAlt4";
-            this.bo4Button3.UseVisualStyleBackColor = true;
-            this.bo4Button3.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button4
-            // 
-            this.bo4Button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button4.AutoSize = true;
-            this.bo4Button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button4.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button4.Image")));
-            this.bo4Button4.Location = new System.Drawing.Point(42, 229);
-            this.bo4Button4.Name = "bo4Button4";
-            this.bo4Button4.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button4.TabIndex = 9;
-            this.bo4Button4.Tag = "5cycleAlt4";
-            this.bo4Button4.UseVisualStyleBackColor = true;
-            this.bo4Button4.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button5
-            // 
-            this.bo4Button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button5.AutoSize = true;
-            this.bo4Button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button5.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button5.Image")));
-            this.bo4Button5.Location = new System.Drawing.Point(458, 229);
-            this.bo4Button5.Name = "bo4Button5";
-            this.bo4Button5.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button5.TabIndex = 10;
-            this.bo4Button5.Tag = "5cycleAlt4";
-            this.bo4Button5.UseVisualStyleBackColor = true;
-            this.bo4Button5.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button6
-            // 
-            this.bo4Button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button6.AutoSize = true;
-            this.bo4Button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button6.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button6.Image")));
-            this.bo4Button6.Location = new System.Drawing.Point(875, 229);
-            this.bo4Button6.Name = "bo4Button6";
-            this.bo4Button6.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button6.TabIndex = 11;
-            this.bo4Button6.Tag = "5cycleAlt4";
-            this.bo4Button6.UseVisualStyleBackColor = true;
-            this.bo4Button6.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button8
-            // 
-            this.bo4Button8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button8.AutoSize = true;
-            this.bo4Button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button8.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button8.Image")));
-            this.bo4Button8.Location = new System.Drawing.Point(458, 446);
-            this.bo4Button8.Name = "bo4Button8";
-            this.bo4Button8.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button8.TabIndex = 12;
-            this.bo4Button8.Tag = "5cycleAlt4";
-            this.bo4Button8.UseVisualStyleBackColor = true;
-            this.bo4Button8.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // bo4Button7
-            // 
-            this.bo4Button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bo4Button7.AutoSize = true;
-            this.bo4Button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bo4Button7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bo4Button7.Image = ((System.Drawing.Image)(resources.GetObject("bo4Button7.Image")));
-            this.bo4Button7.Location = new System.Drawing.Point(42, 446);
-            this.bo4Button7.Name = "bo4Button7";
-            this.bo4Button7.Size = new System.Drawing.Size(331, 189);
-            this.bo4Button7.TabIndex = 13;
-            this.bo4Button7.Tag = "5cycleAlt4";
-            this.bo4Button7.UseVisualStyleBackColor = true;
-            this.bo4Button7.Click += new System.EventHandler(this.mapButton_Click);
-            // 
-            // refillToggle
-            // 
-            this.refillToggle.AutoSize = true;
-            this.refillToggle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refillToggle.Location = new System.Drawing.Point(556, 13);
-            this.refillToggle.Name = "refillToggle";
-            this.refillToggle.Size = new System.Drawing.Size(157, 32);
-            this.refillToggle.TabIndex = 32;
-            this.refillToggle.Text = "Track Full Power";
-            this.refillToggle.UseVisualStyleBackColor = true;
-            this.refillToggle.CheckedChanged += new System.EventHandler(this.refillToggle_CheckedChanged);
-            // 
-            // dropFull
-            // 
-            this.dropFull.Location = new System.Drawing.Point(108, 461);
-            this.dropFull.Name = "dropFull";
-            this.dropFull.Size = new System.Drawing.Size(150, 150);
-            this.dropFull.TabIndex = 33;
-            this.dropFull.TabStop = false;
-            // 
             // VisualForm
             // 
             this.AcceptButton = this.startButton;
@@ -1607,11 +1622,15 @@ namespace Cycle_Tracker
             this.bo3Tab.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.bo4Tab.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.bocwTab.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tracker.ResumeLayout(false);
             this.tracker.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dropFull)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropCarpenter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropBlood)).EndInit();
@@ -1633,10 +1652,6 @@ namespace Cycle_Tracker
             ((System.ComponentModel.ISupportInitialize)(this.dropList2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropList1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropMax)).EndInit();
-            this.bo4Tab.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dropFull)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1744,5 +1759,6 @@ namespace Cycle_Tracker
         private System.Windows.Forms.Button bo4Button6;
         private System.Windows.Forms.CheckBox refillToggle;
         private System.Windows.Forms.PictureBox dropFull;
+        private System.Windows.Forms.Button bocwButton3;
     }
 }
