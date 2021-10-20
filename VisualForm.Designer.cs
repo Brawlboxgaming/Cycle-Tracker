@@ -96,7 +96,7 @@ namespace Cycle_Tracker
             this.bo4Button6 = new System.Windows.Forms.Button();
             this.bocwTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.bocwButton3 = new System.Windows.Forms.Button();
+            this.bocwButton4 = new System.Windows.Forms.Button();
             this.bocwButton1 = new System.Windows.Forms.Button();
             this.bocwButton2 = new System.Windows.Forms.Button();
             this.tracker = new System.Windows.Forms.TabPage();
@@ -132,6 +132,7 @@ namespace Cycle_Tracker
             this.restartButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.carpToggle = new System.Windows.Forms.CheckBox();
+            this.bocwButton3 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.game.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1189,6 +1190,7 @@ namespace Cycle_Tracker
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.002F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.998F));
             this.tableLayoutPanel6.Controls.Add(this.bocwButton3, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.bocwButton4, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.bocwButton1, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.bocwButton2, 1, 0);
             this.tableLayoutPanel6.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -1200,20 +1202,20 @@ namespace Cycle_Tracker
             this.tableLayoutPanel6.Size = new System.Drawing.Size(1250, 649);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
-            // bocwButton3
+            // bocwButton4
             // 
-            this.bocwButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bocwButton3.AutoSize = true;
-            this.bocwButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bocwButton3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bocwButton3.Image = ((System.Drawing.Image)(resources.GetObject("bocwButton3.Image")));
-            this.bocwButton3.Location = new System.Drawing.Point(59, 343);
-            this.bocwButton3.Name = "bocwButton3";
-            this.bocwButton3.Size = new System.Drawing.Size(506, 287);
-            this.bocwButton3.TabIndex = 6;
-            this.bocwButton3.Tag = "5cycleAlt3";
-            this.bocwButton3.UseVisualStyleBackColor = true;
-            this.bocwButton3.Click += new System.EventHandler(this.mapButton_Click);
+            this.bocwButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bocwButton4.AutoSize = true;
+            this.bocwButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bocwButton4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bocwButton4.Image = ((System.Drawing.Image)(resources.GetObject("bocwButton4.Image")));
+            this.bocwButton4.Location = new System.Drawing.Point(684, 343);
+            this.bocwButton4.Name = "bocwButton4";
+            this.bocwButton4.Size = new System.Drawing.Size(506, 287);
+            this.bocwButton4.TabIndex = 6;
+            this.bocwButton4.Tag = "5cycleAlt3";
+            this.bocwButton4.UseVisualStyleBackColor = true;
+            this.bocwButton4.Click += new System.EventHandler(this.mapButton_Click);
             // 
             // bocwButton1
             // 
@@ -1595,6 +1597,20 @@ namespace Cycle_Tracker
             this.carpToggle.UseVisualStyleBackColor = true;
             this.carpToggle.CheckedChanged += new System.EventHandler(this.carpToggle_CheckedChanged);
             // 
+            // bocwButton3
+            // 
+            this.bocwButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bocwButton3.AutoSize = true;
+            this.bocwButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bocwButton3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bocwButton3.Image = ((System.Drawing.Image)(resources.GetObject("bocwButton3.Image")));
+            this.bocwButton3.Location = new System.Drawing.Point(59, 343);
+            this.bocwButton3.Name = "bocwButton3";
+            this.bocwButton3.Size = new System.Drawing.Size(506, 287);
+            this.bocwButton3.TabIndex = 7;
+            this.bocwButton3.Tag = "5cycleAlt3";
+            this.bocwButton3.UseVisualStyleBackColor = true;
+            // 
             // VisualForm
             // 
             this.AcceptButton = this.startButton;
@@ -1759,6 +1775,7 @@ namespace Cycle_Tracker
         private System.Windows.Forms.Button bo4Button6;
         private System.Windows.Forms.CheckBox refillToggle;
         private System.Windows.Forms.PictureBox dropFull;
+        private System.Windows.Forms.Button bocwButton4;
         private System.Windows.Forms.Button bocwButton3;
     }
 }
